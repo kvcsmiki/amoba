@@ -1,0 +1,40 @@
+#board {
+    width: 320px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+div{
+    margin: auto;
+}
+
+.cell {
+    background-color: #eee;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+}
+
+.cell.winner {
+    background-color: #8f8;
+}
+
+#message {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
